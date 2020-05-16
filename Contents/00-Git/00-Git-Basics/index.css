@@ -1,0 +1,11 @@
+@keyframes name {
+    
+    from {color: #ff0000;}
+    
+    to {color:#008000}
+}
+
+h1{
+    animation-name: name;
+    animation-duration: 4s;
+}

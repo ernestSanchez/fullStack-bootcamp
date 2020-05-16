@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+  <div style="text-align: center;">
+    <div class="card">
+    
+    <img src="{{dataSong[indiceCancion].image}}" class="coverBg"> 
+    </div>
+    <h1>{{dataSong[indiceCancion].artist}}</h1>
+
+    <h5>{{dataSong[indiceCancion].titulo}}</h5>
+
+    <audio controls>
+
+      <source src="{{dataSong[indiceCancion].archivo}}" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>

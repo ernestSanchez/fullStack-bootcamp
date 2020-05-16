@@ -1,0 +1,9 @@
+ .coversCard {
+position: inherit;
+ }
+ .test{
+    max-height:150px;
+ }
+ .in-text{
+     text-align: center;
+ }

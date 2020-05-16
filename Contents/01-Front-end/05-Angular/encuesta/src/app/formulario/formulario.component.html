@@ -1,0 +1,63 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card mt-4 p-4 ">
+                <form class="int-form" 
+                name="formularioRegistro" 
+                (ngSubmit)="miFormulario.form.valid && submitData()" 
+                #miFormulario="ngForm">
+                    
+                <div class="input-group mb-3">
+                        <input class="form-control" type="text" placeholder="¿Qué Bootcamp estás realizando?"
+                        required 
+                        name= "tipoBoot"
+                        #inputBoot="ngModel"
+                        [(ngModel)]="formData['tipoBoot']" minlength="10" maxlength="50">
+                       </div> 
+                       <P *ngIf="inputBoot.invalid && inputBoot.dirty">LOGITUD CARACTERES ENTRE 10 Y 50</P>
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="date" placeholder="¿Cuándo comenzó el bootcamp?"
+                        required 
+                        name= "dateBoot"
+                        #inputDateBoot="ngModel"
+                        [(ngModel)]="formData['dateBoot']" min="2020-01-01" max="2021-03-01">
+                    </div>
+                        <p *ngIf="inputDateBoot.invalid && inputDateBoot.touched">FECHA ENTRE 01/01/2020 A 01/03/2020</p>
+                    <div class="input-group mb-3">
+                    <input class="form-control" type="number" placeholder="¿En una escala del 0 al 5, consideras que estás avanzando al ritmo adecuado?"  required
+                    name= "scaleBoot"
+                    #inputescaleBoot="ngModel"
+                    [(ngModel)]="formData['scaleBoot']" min="0" max="5">
+                    </div>  
+                    <p *ngIf="inputescaleBoot.invalid && inputescaleBoot.dirty">max 5q!!</p>
+                  
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">¿Tienes sugerencias?</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        name= "tareaBoot"
+                        #inputTareaBoot="ngModel"
+                        [(ngModel)]="formData['tareaBoot']" maxlength="250"></textarea>
+                      </div>
+                      
+                      <p *ngIf="inputTareaBoot.valid && inputTareaBoot.pristine  && inputTareaBoot.untouched">max 250 characteres!!</p>
+                      
+                      <div class="input-group mb-3">
+                        <input class="form-control" type="tel" placeholder="Indícanos un número de teléfono al que contactarte" 
+                        requiered
+                        pattern="/\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/"
+                        name="tlfo"
+                        #inpuTtlfo="ngModel"
+                        [(ngModel)]="formData['tlfo']">
+                    </div>
+                  <p *ngIf="inpuTtlfo.invalid && inpuTtlfo.dirty">DEBE TENER 9 NUM SIN ESPACIOS</p>
+                    <div class="col-4">
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                        
+                        <button type="submit" class="btn btn-success">Submit</button> 
+                    </div>
+                  
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+
+
+input.ng-invalid.ng-touched.ng-dirty{
+    border-left: 4px solid indianred;
+}
+textarea.ng-invalid{
+    border-left: 4px solid indianred;
+}

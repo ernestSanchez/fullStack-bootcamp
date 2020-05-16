@@ -1,0 +1,18 @@
+.bg-up{
+
+    background-image: url("/assets/coworking.jpg") ;
+    background-size: cover;
+
+}
+
+
+.bg-layer{
+    background-color: blue;
+    opacity: 0.5;
+}
+
+.inputs-searcher{
+    padding: 37px;
+  
+    margin-left: 33px;
+}

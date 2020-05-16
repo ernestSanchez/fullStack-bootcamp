@@ -1,0 +1,25 @@
+.bg-blue {
+    background: #3079AB;
+    color: white;
+    padding: 2em 0;
+  }
+
+h1,h2,h3,p {
+    text-align: center;
+}
+
+.card-white {
+    background: white;
+    padding: 30px;
+    box-shadow: 1px 1px 2px #e7e7e7;
+    border-radius: 4px;
+    margin: 20px 50px;
+}
+.wrapper {
+    background: #EDEFF0;
+    color: #4e4e4e;
+}
+.cabezera{
+    padding: 30px;
+
+}

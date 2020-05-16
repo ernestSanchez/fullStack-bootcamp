@@ -1,0 +1,67 @@
+<div class="container-fluid">
+  <div>
+    <h1>GESTION DE EVENTOS</h1>
+  </div>
+  <hr>
+  <div>
+    <h5>NUEVO EVENTO</h5>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col col-md-8">
+      <div class="row">
+        <div class="col col-md-4"><input type="text" class="event-name"></div>
+        <div class="col  col-md-4"><input type="date" class="event-date"></div>
+        <div class="col  col-md-4"><input type="time" class="event-time"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col col-md-4"><input type="text" class="event-facilitador"></div>
+        <div class="col  col-md-4"><input type="email"></div>
+        <div class="col  col-md-4"><input type="number" class="event-MaxNum"></div>
+      </div>
+    </div>
+
+    <div class="col col-md-2">
+      <div class="row">
+        <div class="col col-md-6"><textarea id="textarea" rows="3"></textarea>
+          <div class="col col-md-4"><button (click)="adedUser()">insertar</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <h5>LISTA DE EVENTOS</h5>
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">EVENTO</th>
+          <th scope="col">INICIO</th>
+          <th scope="col">FACILITADOR</th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let event of events; let i = index">
+          <td>
+            <p>{{event.event}}</p>
+          </td>
+          <td>
+            <p>{{event.dateIni}}</p>
+          </td>
+          <td>
+            <p>{{event.nameFacilit}}</p>
+          </td>
+          <td><button>search</button></td>
+          <td><input type="text" (blur)="countNumbers(i,$event.target.value)"></td>
+          <td><button (click)="deleteEvent()">delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

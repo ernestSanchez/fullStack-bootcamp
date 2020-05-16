@@ -1,0 +1,38 @@
+.Bg  {
+   
+    background-color: #f2f2f2;
+}
+
+
+.owner img {
+    height: 115px;
+    width: auto;
+    margin-left: -14px;
+   
+}
+
+.fullname{
+    font-size: 21px;
+    margin-top: 7px;
+}
+
+.repositores{
+    font-size: 17px;
+}
+
+.text-head{
+
+    margin-left: 43px;
+}
+
+.bar {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 9;
+    border-top: 2px solid rgba(0, 0, 0, 0.973);
+}
+
+
+.repos {
+    background-color: white;
+}

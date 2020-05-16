@@ -1,0 +1,138 @@
+
+body{
+    background: rgba(184, 182, 182, 0.795);
+
+}
+
+.content {
+    width: 100%;
+   }
+
+.header-bar {
+    margin: auto 0;
+}
+
+.header-bar .logo {
+    color: #fff;
+    background: #f00;
+    padding: 5px;
+} 
+
+.header-bar .menu {
+    background: #fff;
+}
+
+.menu-list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-bar .menu .menu-item {
+    display: inline;
+}
+
+.color-dropdown {
+    color: red;
+}
+
+.bar-icon{
+    position: absolute;
+    left: 0;
+    color: red;
+    margin: 7px;
+    font-size: 28px;
+    transform: rotate(90deg);
+}
+.header-button-list{
+    text-align: right;
+}
+
+.icons-header{
+    border: none;
+    background: transparent;
+}
+
+.mailbutton{
+    margin: 5px;
+}
+.upper {
+     
+     background: red;
+}
+
+
+h2 {
+    margin-top: 9px;
+    padding: 5px;
+    
+}
+
+.header-two{
+    color: gray;
+    font-size: 20px;
+
+}
+
+.marcadore {
+    position:relative;
+  
+  
+  
+}
+
+.incardmid{
+    background: white;
+    padding: 60px;
+    margin: 10px;
+    width:300px ;
+}
+
+.botones {
+   padding-bottom: 20px;
+    height: 80px;
+    transform: translateY(-45px)
+    }
+
+.P {
+    padding: 20px;
+}
+
+.cardindownleft {
+    background: white; 
+    transform: translateX(15px);
+    margin: 10px;
+}
+
+.task-badge {
+    float: right;
+    background: red;
+}
+.cardindownrigth {
+    background: white;
+    transform: translateX(45px) translateY(-5px);
+    width: 800px;
+} 
+.task-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+.task-icon{
+    margin-right: 5px;
+}
+.task-item {
+border: solid 1px rgb(202, 202, 202) ;
+padding: 5px;
+
+}
+.container {
+    margin: 0px;
+    padding-bottom: 0px;
+    background: yellow;
+    border: 2px solid rgb(211, 211, 211);
+}
+.table-text {
+    padding: 10px;
+    padding-left: 0;
+}

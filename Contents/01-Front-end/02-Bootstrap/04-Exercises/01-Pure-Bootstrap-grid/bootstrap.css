@@ -1,0 +1,22 @@
+.container .tops {
+    border: 2px solid rgb(211, 211, 211);
+    background-image: linear-gradient(to bottom right, rgb(173, 173, 173), rgba(255, 255, 255, 0.5));
+}
+
+.tops {
+     height: 100px;
+     text-align: center;
+    
+}
+
+.mid {
+    height: 100px;
+ }
+
+.happy {
+    color: black;
+    opacity:0.2;
+    font-size: 90px;
+}
+
+ 

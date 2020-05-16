@@ -1,0 +1,13 @@
+.navbar-toolbar{
+    padding: 46px;
+    background-color: none;
+}
+
+.text-nav {
+    color: white;
+    font-weight: bold;
+}
+
+.login-buttons{
+    transform: translateX(625px);
+}

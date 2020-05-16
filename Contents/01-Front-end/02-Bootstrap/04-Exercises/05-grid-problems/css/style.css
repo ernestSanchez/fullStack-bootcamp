@@ -1,0 +1,36 @@
+@import url("banner.css");
+@import url("card.css");
+@import url("feature.css");
+@import url("avatar.css");
+@import url("footer.css");
+
+body {
+  margin: 0;
+  font-family: Open-sans, sans-serif;
+}
+h1, h2, h3 {
+  font-family: Raleway, Helvetica, sans-serif;
+}
+.text-center {
+  text-align: center;
+}
+
+.padded {
+  padding: 5em 0;
+
+}
+
+.freatures-head {
+  margin-right: 0;
+  margin-left: 0;
+  padding: 76px;
+}
+@media (max-height:600px){ 
+  .freatures-head {
+    padding: 0;
+ }
+}
+
+.d {
+  padding-left: 150px;
+}

@@ -1,0 +1,15 @@
+.header-banner {
+ max-width: 100%;
+ height: auto;
+
+}
+.text-banner {
+    color: white; 
+    font-size: 3vw;;
+    margin-top: 66px;
+}
+.text-down-banner  {
+    color: white; 
+    font-size: 2vw;
+    margin-top: 1vw;
+}
